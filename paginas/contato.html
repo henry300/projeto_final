@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | DarkSide Books</title>
+  <link rel="stylesheet" href="../css/cssGlobal.css"/>
+  <link rel="stylesheet" href="../css/contato.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">
+        <img src="../imagens/logo-darkside.png" alt="Logo DarkSide Books" />
+      </a>
+    </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="/index.html">Inicio</a></li>
+          <li class="dropbtn">
+            <a href="#">Livros</a>
+            <div class="dropdown">  
+              <a href="../paginas/rei.html">Rei de Amarelo</a>
+              <a href="../paginas/guerra.html">Guerra, adoravel Guerra</a>
+            </div>
+          </li>   
+          <li><a href="../paginas/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h1>Fale conosco</h1>
+      <form id="contatoForm">
+        <article>
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" required />
+        </article>
+
+        <article>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </article>
+
+        <article>
+          <label for="nascimento">Data de nascimento:</label>
+          <input type="date" id="nascimento" name="nascimento" />
+        </article>
+
+        <article>
+          <label for="genero">Gênero favorito:</label>
+          <select id="genero" name="genero">
+            <option value="terror">Terror</option>
+            <option value="fantasia">Fantasia</option>
+            <option value="ficcao">Ficção</option>
+            <option value="mistério">Mistério</option>
+          </select>
+        </article>
+
+        <article>
+          <label>Você já leu algum livro da DarkSide?</label>
+          <input type="radio" name="leu" value="Sim" /> Sim
+          <input type="radio" name="leu" value="Não" /> Não
+        </article>
+
+        <article>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+        </article>
+
+        <section class="botoes">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </section>
+      </form>
+
+      <aside id="resposta"></aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DarkSide Books. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../js/dropdown.js"></script>
+  <script src="../js/formulario.js"></script>
+</body>
+</html>
